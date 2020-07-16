@@ -1,8 +1,8 @@
 h1 {
-  padding-top: 50px;
+  /* padding-top: 500px; */
 }
 
-nav ul {
+/* nav ul {
   background-color: #333;
   display: flex;
   list-style: none;
@@ -39,7 +39,7 @@ nav li:hover, .nav-active:hover {
 
 .nav-push-right {
   margin-left: auto;
-}
+} */
 
 ul.list-start li {
   padding: 14px 16px;
@@ -56,12 +56,8 @@ ul.list-start li {
 
 /* This is not really a button.  I made it a link and put a box around it */
 .start-button-text {
-  background-color: #33e6ff;
-  border: 5px solid black;
-  color: black;
+  color: white;
   font-weight: bold;
-  margin: 10px;
-  padding: 14px 40px;
 }
 
 .start-button-text:hover {
