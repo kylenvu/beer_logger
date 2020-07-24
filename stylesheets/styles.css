@@ -1,11 +1,29 @@
+body {
+  margin: 0 auto;
+  padding: 20px 20px;
+  width: 80%;
+}
+
+h1 {
+  padding-top: 100px;
+}
+
 ul.list-start li {
   padding: 14px 16px;
   text-align: center;
 }
 
+label {
+  font-weight: bold;
+}
+
+.valueSpan {
+  font-size: 28px;
+}
+
 .list-start {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   list-style-type: none;
   padding: 0;
