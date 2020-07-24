@@ -27,10 +27,14 @@
         <a class="nav-item nav-link" href="about.html">About</a>
         <a class="nav-item nav-link" href="contact_us.html">Contact Us</a>
       </div>
-        <form class="form-inline">
+      <!-- <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        </form> -->
+      <div class="d-flex justify-content-around">
+        <button class="btn btn-primary" type="button" name="nav_btn_login" id="nav_btn_login">Log In</button>
+        <button class="btn btn-success" type="button" name="nav_btn_start" id="nav_btn_start">Start</button>
+      </div>
     </nav>
 
     <section>
@@ -40,8 +44,13 @@
       </p>
     </section>
 
-    <section>
+    <!-- <section>
       <h2>Start logging a beer <span class="badge badge-secondary"><a class="start-button-text" href="login.html">Start</a></span></h2>
+    </section> -->
+
+    <section>
+      <button class="btn btn-primary btn-lg btn-block" type="button" id="btn_login_block">Log In</button>
+      <button class="btn btn-success btn-lg btn-block" type="button" id="btn_start_block">Start Logging a Beer</button>
     </section>
   </main>
 

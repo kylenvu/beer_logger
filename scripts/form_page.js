@@ -1,3 +1,16 @@
+// Displaying value for slider
+$(document).ready(function() {
+
+  const $valueSpan = $('.valueSpan');
+  const $value = $('#beer_range');
+  $valueSpan.html($value.val());
+  $value.on('input change', () => {
+
+    $valueSpan.html($value.val());
+  });
+});
+
+
 // JS Code for Editing Brewery List
 
 const btn_add_brewer = document.getElementById("btn_add_brewer");

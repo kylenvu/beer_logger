@@ -1,11 +1,28 @@
-// Displaying value for slider
-$(document).ready(function() {
+const btn_start = document.getElementById("nav_btn_start");
+const btn_login = document.getElementById("nav_btn_login");
+const btn_start_block = document.getElementById("btn_start_block");
+const btn_login_block = document.getElementById("btn_login_block");
 
-  const $valueSpan = $('.valueSpan');
-  const $value = $('#beer_range');
-  $valueSpan.html($value.val());
-  $value.on('input change', () => {
+function move_to_start() {
+  location.href = "form_page.html";
+};
 
-    $valueSpan.html($value.val());
-  });
-});
+function move_to_login() {
+  location.href = "login.html";
+};
+
+btn_start.onclick = function() {
+  move_to_start();
+};
+
+btn_login.onclick = function() {
+  move_to_login();
+};
+
+btn_start_block.onclick = function() {
+  move_to_start();
+};
+
+btn_login_block.onclick = function() {
+  move_to_login();
+};
