@@ -34,7 +34,7 @@ function add_brewer() {
   // Append new breweries
   brewer_list.appendChild(opt);
   brewer_list_copy.appendChild(opt_clone);
-  alert("Done");
+  // alert("Done");
 };
 
 function rmv_brewer() {
@@ -43,16 +43,53 @@ function rmv_brewer() {
   var rmv_brewery_copy = brewer_list_copy.getElementsByClassName(old_brewery)[0];
   rmv_brewery.parentNode.removeChild(rmv_brewery);
   rmv_brewery_copy.parentNode.removeChild(rmv_brewery_copy);
-}
+};
 
 btn_add_brewer.onclick = function() {
   add_brewer();
-}
+};
 
 btn_rmv_brewer.onclick = function() {
   rmv_brewer();
-}
+};
 
 // JS Code for Editing Style List
-
 const btn_add_style = document.getElementById("btn_add_style");
+const btn_rmv_style = document.getElementById("btn_remove_style");
+const style_list = document.getElementById("form_control_select_style");
+const style_list_copy = document.getElementById("form_control_select_style_copy");
+const txt_new_style = document.getElementById("txt_input_add_style");
+
+function add_style() {
+  // Create a new option element
+  var new_style = txt_new_style.value;
+  var opt = document.createElement('option');
+
+  // Set the name and class of new brewery
+  opt.textContent = new_style;
+  opt.setAttribute('class', new_style);
+
+  // Clone for appending
+  var opt_clone = opt.cloneNode(true);
+
+  // Append new breweries
+  style_list.appendChild(opt);
+  style_list_copy.appendChild(opt_clone);
+  // alert("Done");
+};
+
+function rmv_style() {
+  var old_style = style_list_copy.value;
+  var rmv_style = style_list.getElementsByClassName(old_style)[0];
+  var rmv_style_copy = style_list_copy.getElementsByClassName(old_style)[0];
+    rmv_style.parentNode.removeChild(rmv_style);
+  rmv_style_copy.parentNode.removeChild(rmv_style_copy);
+};
+
+btn_add_style.onclick = function() {
+  add_style();
+};
+
+btn_rmv_style.onclick = function() {
+  rmv_style();
+};

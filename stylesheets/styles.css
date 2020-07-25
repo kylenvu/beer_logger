@@ -8,35 +8,10 @@ h1 {
   padding-top: 100px;
 }
 
-ul.list-start li {
-  padding: 14px 16px;
-  text-align: center;
-}
-
 label {
   font-weight: bold;
 }
 
 .valueSpan {
   font-size: 28px;
-}
-
-.list-start {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-  padding: 0;
-}
-
-/* This is not really a button.  I made it a link and put a box around it */
-.start-button-text {
-  color: white;
-  font-weight: bold;
-}
-
-.start-button-text:hover {
-  background-color: #33c7ff;
-  color: black;
-  text-decoration: none;
 }

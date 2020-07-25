@@ -1,5 +1,3 @@
-const btn_start = document.getElementById("nav_btn_start");
-const btn_login = document.getElementById("nav_btn_login");
 const btn_start_block = document.getElementById("btn_start_block");
 const btn_login_block = document.getElementById("btn_login_block");
 
