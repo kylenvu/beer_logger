@@ -18,7 +18,9 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">BeerLogger</a>
+      <a class="navbar-brand" href="index.html">
+        <img src="images/beer_icon.png" width="30" height="30" alt="" loading="lazy">
+      </a>
       <div class="navbar-nav mr-auto">
         <a class="nav-item nav-link" href="index.html">Home</a>
         <a class="nav-item nav-link" href="logger_history.html">Logger History</a>
@@ -89,6 +91,11 @@
               <label for="btn_add_brewer">Don't see your style listed? </label>
               <button class="btn btn-dark" type="button" name="btn_add_style" id="btn_add_style">Add Style</button>
             </div> -->
+          </div>
+
+          <div class="form-group">
+            <label for="name_of_drink">(Optional) Please enter the specific name of the drink (if applicable).</label>
+            <input class="form-control" type="text" name="name_of_drink" id="name_of_drink">
           </div>
 
           <!-- Slider - status: working -->

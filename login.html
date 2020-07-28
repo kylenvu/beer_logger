@@ -25,7 +25,9 @@
   <main class="mainlogin mainformat">
 
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">BeerLogger</a>
+      <a class="navbar-brand" href="index.html">
+        <img src="images/beer_icon.png" width="30" height="30" alt="" loading="lazy">
+      </a>
       <div class="navbar-nav mr-auto">
         <a class="nav-item nav-link active" href="index.html">Home</a>
         <a class="nav-item nav-link" href="logger_history.html">Logger History</a>
@@ -68,7 +70,7 @@
   Author: Kyle Vu
   -->
   <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-  <script>
+  <!-- <script>
     function onSignIn(googleUser) {
       // Useful data for your client-side scripts:
       var profile = googleUser.getBasicProfile();
@@ -83,7 +85,7 @@
       var id_token = googleUser.getAuthResponse().id_token;
       console.log("ID Token: " + id_token);
     }
-  </script>
+  </script> -->
 
   <!-- JS Scripts for Boot strap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
