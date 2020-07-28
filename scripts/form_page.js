@@ -82,7 +82,7 @@ function rmv_style() {
   var old_style = style_list_copy.value;
   var rmv_style = style_list.getElementsByClassName(old_style)[0];
   var rmv_style_copy = style_list_copy.getElementsByClassName(old_style)[0];
-    rmv_style.parentNode.removeChild(rmv_style);
+  rmv_style.parentNode.removeChild(rmv_style);
   rmv_style_copy.parentNode.removeChild(rmv_style_copy);
 };
 
@@ -93,3 +93,23 @@ btn_add_style.onclick = function() {
 btn_rmv_style.onclick = function() {
   rmv_style();
 };
+
+// Basic Adding Logged Beers to Beer History page
+const form = document.getElementById("main_form");
+const image_url = document.getElementById("input_add_picture");
+var history_arr = JSON.parse(window.sessionStorage.getItem("history_arr_str")) || [];
+var image = document.createElement("img");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  var logged_beer = $(this).serializeJSON();
+  logged_beer.image_url = image_url.value;
+  // if (image_url.files[0]) {
+  //   image.src = URL.createObjectURL(image_url.files[0]);
+  //   logged_beer.image_url = image.src;
+  // }
+  history_arr.push(logged_beer);
+  var history_arr_str = JSON.stringify(history_arr);
+  window.sessionStorage.setItem("history_arr_str", history_arr_str);
+  this.reset();
+});
