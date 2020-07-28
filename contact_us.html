@@ -11,12 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-imagelogin">
   <header>
     <h1>Contact Us</h1>
   </header>
 
-  <main>
+  <main class="contact-us-page">
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
       <a class="navbar-brand" href="#">BeerLogger</a>
       <div class="navbar-nav mr-auto">
@@ -35,6 +35,23 @@
         <button class="btn btn-success" type="button" name="nav_btn_start" id="nav_btn_start">Start</button>
       </div>
     </nav>
+
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="name"> Name </label>
+          <input class="form-control" name="name" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email"> Email </label>
+          <input class="form-control" name="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="text_area_feedback">What is on your mind?</label>
+          <textarea name="feedback_description" class="form-control" id="text_area_feedback" rows="3"></textarea>
+        </div>
+        <button class="btn btn-primary" type="button" name="btn_login" id="submit">Submit</button>
+      </form>
   </main>
 
   <!-- JS Scripts for Boot strap -->
