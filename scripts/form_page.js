@@ -103,11 +103,11 @@ var image = document.createElement("img");
 form.addEventListener("submit", function(event) {
   event.preventDefault();
   var logged_beer = $(this).serializeJSON();
-  logged_beer.image_url = image_url.value;
-  // if (image_url.files[0]) {
-  //   image.src = URL.createObjectURL(image_url.files[0]);
-  //   logged_beer.image_url = image.src;
-  // }
+  // logged_beer.image_url = image_url.value;
+  if (image_url.files[0]) {
+    image.src = URL.createObjectURL(image_url.files[0]);
+    logged_beer.image_url = image.src;
+  }
   history_arr.push(logged_beer);
   var history_arr_str = JSON.stringify(history_arr);
   window.sessionStorage.setItem("history_arr_str", history_arr_str);
