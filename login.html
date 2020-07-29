@@ -42,6 +42,9 @@
       <div class="d-flex justify-content-around">
         <button class="btn btn-primary" type="button" name="nav_btn_login" id="nav_btn_login">Log In</button>
         <button class="btn btn-success" type="button" name="nav_btn_start" id="nav_btn_start">Start</button>
+        <a class="navbar-brand" href="#">
+          <img id="g-profile-img" width="30" height="30" alt="" loading="lazy">
+        </a>
       </div>
     </nav>
 
@@ -57,19 +60,15 @@
           <input class="form-control" name="password" id="Password">
         </div>
         <button class="btn btn-primary" type="button" name="btn_login" id="btn_login">Login</button>
+
+        <div class="form-group">
+            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+        </div>
       </form>
     </section>
   </main>
 
-  <!-- Button and script for google sign in button; taken from Google Developers
-  Status: kind of working
-      - it allows you to log in using Google, but doesn't do anything with it
-  Future plans:
-      - I'll probably just edit the script a bit to do something else
-      - Script will probably get moved to login.js as well
-  Author: Kyle Vu
-  -->
-  <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+
   <!-- <script>
     function onSignIn(googleUser) {
       // Useful data for your client-side scripts:
