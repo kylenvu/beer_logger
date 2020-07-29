@@ -112,4 +112,5 @@ form.addEventListener("submit", function(event) {
   var history_arr_str = JSON.stringify(history_arr);
   window.sessionStorage.setItem("history_arr_str", history_arr_str);
   this.reset();
+  alert("Beer successfully logged!  Feel free to log another one, or go to the Logged History Page to see all your logged beers!");
 });
