@@ -35,11 +35,14 @@
       <div class="d-flex justify-content-around">
         <button class="btn btn-primary" type="button" name="nav_btn_login" id="nav_btn_login">Log In</button>
         <button class="btn btn-success" type="button" name="nav_btn_start" id="nav_btn_start">Start</button>
+        <a class="navbar-brand" href="#">
+          <img class="g-profile-image" id="g-profile-img" width="30" height="30" alt="" loading="lazy">
+        </a>
       </div>
     </nav>
 
-    <div>
-      <form>
+    <div class="formlogin mainformat">
+      <form method="get">
         <div class="form-group">
           <label for="name"> Name </label>
           <input class="form-control" name="name" id="name">
@@ -52,8 +55,9 @@
           <label for="text_area_feedback">What is on your mind?</label>
           <textarea name="feedback_description" class="form-control" id="text_area_feedback" rows="3"></textarea>
         </div>
-        <button class="btn btn-primary" type="button" name="btn_login" id="submit">Submit</button>
+        <button class="btn btn-primary" type="submit" name="btn_login" id="submit">Submit</button>
       </form>
+    </div>
   </main>
 
   <!-- JS Scripts for Boot strap -->
