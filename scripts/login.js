@@ -16,8 +16,6 @@ function onSignIn(googleUser) {
   // console.log("Email: " + profile.getEmail());
   alert("Welcome to Beer Logger " + profile.getName());
   window.sessionStorage.setItem("profile_image_url", profile.getImageUrl());
-  document.location.reload();
-  break;
 
   // The ID token you need to pass to your backend:
   var id_token = googleUser.getAuthResponse().id_token;
