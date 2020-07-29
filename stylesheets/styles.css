@@ -109,6 +109,10 @@ label {
   font-size: 28px;
 }
 
+.g-profile-image {
+  margin: 10px 10px;
+}
+
 /* Styles for Logger History Page */
 .beer-entry-img-li {
   list-style: none;
