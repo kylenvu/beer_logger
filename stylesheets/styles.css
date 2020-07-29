@@ -53,10 +53,6 @@ nav {
   width: 45%;
 }
 
-.fixed-top {
-  position: absolute;
-}
-
 select option {
   background-color: beige;
 }
